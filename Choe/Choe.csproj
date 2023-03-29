@@ -85,13 +85,22 @@
     <None Include="Resources\Без имени-1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Без имени-2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Без име11ни-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\крест3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Иконка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Интеграл.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Без иwqrмени-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Интеграл.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
