@@ -26,5 +26,69 @@ namespace Choe
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+       
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+
+        private void label2_MouseDown(object sender, MouseEventArgs e)
+        {
+            label2.Capture = false;
+            Message m = Message.Create(base.Handle, 0xA1, new IntPtr(2), IntPtr.Zero);
+            base.WndProc(ref m);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
