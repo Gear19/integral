@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F10B3285-07C8-4D54-8629-35D6561DC3DA}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Choe</RootNamespace>
     <AssemblyName>Choe</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -32,10 +32,20 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mathematics">
+      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="NRTE">
+      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\NRTE.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,27 +57,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Base\BinaryOperationType.cs" />
+    <Compile Include="Base\CheckedData`1.cs" />
+    <Compile Include="Base\CompareData`1.cs" />
+    <Compile Include="Base\CompareTypes.cs" />
+    <Compile Include="Base\Constants.cs" />
+    <Compile Include="Base\Converter.cs" />
+    <Compile Include="Base\Converters.cs" />
+    <Compile Include="Base\FunctionData.cs" />
+    <Compile Include="Base\IntegralData.cs" />
+    <Compile Include="Base\ItemData.cs" />
+    <Compile Include="Base\LevelData.cs" />
+    <Compile Include="Base\LimitData.cs" />
+    <Compile Include="Base\LiteralEvaluate.cs" />
+    <Compile Include="Base\LiteralEvaluator.cs" />
+    <Compile Include="Base\LiteralIs.cs" />
+    <Compile Include="Base\MatrixData.cs" />
+    <Compile Include="Base\Messages.cs" />
+    <Compile Include="Base\Names.cs" />
+    <Compile Include="Base\OperatorArity.cs" />
+    <Compile Include="Base\OperatorData.cs" />
+    <Compile Include="Base\OperatorList`2.cs" />
+    <Compile Include="Base\OperatorPosition.cs" />
+    <Compile Include="Base\OperatorType.cs" />
+    <Compile Include="Base\PairUtilities.cs" />
+    <Compile Include="Base\StringOperators.cs" />
+    <Compile Include="Base\Symbols.cs" />
+    <Compile Include="Base\Syntax.cs" />
+    <Compile Include="Base\Translator.cs" />
+    <Compile Include="Base\Types.cs" />
+    <Compile Include="Base\Utilities.cs" />
+    <Compile Include="Base\ValueData.cs" />
+    <Compile Include="Base\ValueToString.cs" />
+    <Compile Include="Base\VectorData.cs" />
+    <Compile Include="Integrals\AlgorithmIntegrator.cs" />
+    <Compile Include="Integrals\AutoIntegralContext.cs" />
+    <Compile Include="Integrals\FunctionalIntegral.cs" />
+    <Compile Include="Integrals\IntegralContext.cs" />
+    <Compile Include="Integrals\Integrator.cs" />
+    <Compile Include="Integrals\MatchData.cs" />
+    <Compile Include="Integrals\SimplifyIntegrator.cs" />
+    <Compile Include="Integrals\SubstituteData.cs" />
+    <Compile Include="Integrals\SubstituteIntegrator.cs" />
+    <Compile Include="Integrals\TemplateIntegrator.cs" />
+    <Compile Include="MainProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <Compile Include="Syntactic\ArrayExpression.cs" />
+    <Compile Include="Syntactic\BaseExpression.cs" />
+    <Compile Include="Syntactic\BinaryOperationsExpression.cs" />
+    <Compile Include="Syntactic\Builder.cs" />
+    <Compile Include="Syntactic\CharacterRule.cs" />
+    <Compile Include="Syntactic\CharacterRuleSet.cs" />
+    <Compile Include="Syntactic\ClosingSymbolParityError.cs" />
+    <Compile Include="Syntactic\Elements.cs" />
+    <Compile Include="Syntactic\ExpressionContext.cs" />
+    <Compile Include="Syntactic\FunctionExpression.cs" />
+    <Compile Include="Syntactic\ImplicitOperatorExpression.cs" />
+    <Compile Include="Syntactic\InvalidBeginSymbolError.cs" />
+    <Compile Include="Syntactic\InvalidConstructionError.cs" />
+    <Compile Include="Syntactic\InvalidEndSymbolError.cs" />
+    <Compile Include="Syntactic\InvalidSymbolError.cs" />
+    <Compile Include="Syntactic\LinearExpression.cs" />
+    <Compile Include="Syntactic\LiteralExpression.cs" />
+    <Compile Include="Syntactic\PairErrorData.cs" />
+    <Compile Include="Syntactic\PairIndexes.cs" />
+    <Compile Include="Syntactic\ParanthesisError.cs" />
+    <Compile Include="Syntactic\ParanthesisExpected.cs" />
+    <Compile Include="Syntactic\ParanthesisExpectedButFound.cs" />
+    <Compile Include="Syntactic\ParanthesisMustBeClosedError.cs" />
+    <Compile Include="Syntactic\Parser.cs" />
+    <Compile Include="Syntactic\PowerExpression.cs" />
+    <Compile Include="Syntactic\ProductExpression.cs" />
+    <Compile Include="Syntactic\RelationalExpression.cs" />
+    <Compile Include="Syntactic\SimpleExpression.cs" />
+    <Compile Include="Syntactic\StructuredExpression.cs" />
+    <Compile Include="Syntactic\SumExpression.cs" />
+    <Compile Include="Syntactic\SymbolPair.cs" />
+    <Compile Include="Syntactic\SymbolParityError.cs" />
+    <Compile Include="Syntactic\SyntaxError.cs" />
+    <Compile Include="Syntactic\SyntaxRule.cs" />
+    <Compile Include="Syntactic\SyntaxRuleFunction.cs" />
+    <Compile Include="Syntactic\UnaryOperatorExpression.cs" />
+    <Compile Include="Syntactic\UnexpectedParanthesis.cs" />
+    <Compile Include="Syntactic\VariableExpression.cs" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,25 +154,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Без имени-1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Без име11ни-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\крест3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Иконка.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Интеграл.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Без иwqrмени-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Интеграл.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
