@@ -11,6 +11,11 @@ namespace Choe
 
 		public static void Main()
 		{
+			//var fTranslator = new FormulaTranslator();
+			//foreach (var item in fTranslator._formulaExpressions)
+			//{
+			//	Console.WriteLine(item.Reconstruct());
+			//}
 			_translator = new Translator();
 
 			string newIntegral = Console.ReadLine();
@@ -24,6 +29,8 @@ namespace Choe
 			{
 				Console.WriteLine("Wrong Syntax");
 			}
+
+			//Console.WriteLine(_translator.BuildReconstruct(newIntegral, "x"));
 
 			Console.ReadLine();
 		}
