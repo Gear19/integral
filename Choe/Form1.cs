@@ -18,11 +18,11 @@ namespace Choe
         {
             InitializeComponent();
         }
+
         private void pidor_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
         }
-
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             
@@ -64,12 +64,12 @@ namespace Choe
             this.Close();
         }
 
-        private void pidor_Click_1(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            sidebarTimer.Start();
-
+            Size size = TextRenderer.MeasureText(textBox1.Text, textBox1.Font);
+            textBox1.Width = size.Width;
+            textBox1.Height = size.Height;
+            
         }
-
-        
     }
 }
