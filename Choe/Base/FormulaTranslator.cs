@@ -22,6 +22,7 @@ namespace Choe
                 {
                     formulaValueExpr = BaseExpression.Build(new ExpressionContext((IntegralContext)new AutoIntegralContext()), valuePair.Value, matchingVariables);
                     //formulaValueExpr = BaseExpression.Build(new ExpressionContext((IntegralContext)new AutoIntegralContext()), valuePair.Value);
+                    //formulaValueExpr = BaseExpression.Build(new ExpressionContext((IntegralContext)new AutoIntegralContext()), valuePair.Value);
                     break;
                 }
             }

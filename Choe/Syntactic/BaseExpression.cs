@@ -285,18 +285,8 @@ namespace Choe.Syntactic
             }
             else if (Parser.IsValidName(str))
             {
+                if(matchingVariables.ContainsKey(str)) str = matchingVariables[str];
                 baseExpression = (BaseExpression)new VariableExpression(str);
-                foreach (var vari in matchingVariables)
-                {
-                    if(vari.Key == str)
-                    {
-                        if (Parser.IsLiteral(vari.Value))
-                            baseExpression = (BaseExpression)new LiteralExpression(vari.Value);
-                        else if (Parser.IsValidName(vari.Value))
-                            baseExpression = (BaseExpression)new VariableExpression(vari.Value);
-                        break;
-                    }
-                }
             }
             else
             {
@@ -335,7 +325,7 @@ namespace Choe.Syntactic
                 {
                     List<string> operands1 = checkedData1.Value.Operands;
                     List<string> operators = checkedData1.Value.Operators;
-                    List<BaseExpression> operands2 = BaseExpression.BuildList(context, operands1);
+                    List<BaseExpression> operands2 = BaseExpression.BuildList(context, operands1, matchingVariables);
                     int count = operands2.Count;
                     for (int index = 0; index < count; ++index)
                     {
@@ -383,8 +373,8 @@ namespace Choe.Syntactic
                                 return null;
                             if (!Parser.IsValidName(checkedData4.Value.Name))
                                 return null;
-                            List<BaseExpression> theParameters = BaseExpression.BuildList(context, checkedData4.Value.Parameters);
-                            List<BaseExpression> theArguments = BaseExpression.BuildList(context, checkedData4.Value.Arguments);
+                            List<BaseExpression> theParameters = BaseExpression.BuildList(context, checkedData4.Value.Parameters, matchingVariables);
+                            List<BaseExpression> theArguments = BaseExpression.BuildList(context, checkedData4.Value.Arguments, matchingVariables);
                             baseExpression = (BaseExpression)new FunctionExpression(value, checkedData4.Value.Name, theParameters, theArguments);
                         }
                     }
@@ -525,6 +515,21 @@ namespace Choe.Syntactic
                 for (int index = 0; index < values.Count; ++index)
                 {
                     BaseExpression baseExpression = BaseExpression.Build(context, values[index]);
+                    baseExpressionList.Add(baseExpression);
+                }
+            }
+            return baseExpressionList;
+        }
+
+        public static List<BaseExpression> BuildList(ExpressionContext context, List<string> values, Dictionary<string, string> matchingVariables)
+        {
+            List<BaseExpression> baseExpressionList = (List<BaseExpression>)null;
+            if (values != null)
+            {
+                baseExpressionList = new List<BaseExpression>();
+                for (int index = 0; index < values.Count; ++index)
+                {
+                    BaseExpression baseExpression = BaseExpression.Build(context, values[index], matchingVariables);
                     baseExpressionList.Add(baseExpression);
                 }
             }
