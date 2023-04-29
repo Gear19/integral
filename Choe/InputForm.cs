@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Choe
 {
-    public partial class Form1 : Form
+    public partial class InputForm : Form
     {
+        OutputForm outputForm;
         bool sidebarExpand = true;
         int poison = 562;
-        public Form1()
+        public InputForm()
         {
             InitializeComponent();
         }
@@ -51,6 +52,13 @@ namespace Choe
             
         }
 
+        private void InputTextBox_TextChanged(object sender, EventArgs e)
+        {
+            Size size = TextRenderer.MeasureText(InputTextBox.Text, InputTextBox.Font);
+            InputTextBox.Width = size.Width;
+            InputTextBox.Height = size.Height;
+        }
+
 
         private void label2_MouseDown(object sender, MouseEventArgs e)
         {
@@ -64,12 +72,13 @@ namespace Choe
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Uebok_Click(object sender, EventArgs e)
         {
-            Size size = TextRenderer.MeasureText(textBox1.Text, textBox1.Font);
-            textBox1.Width = size.Width;
-            textBox1.Height = size.Height;
-            
+            DATADATADATA.OutputTextDa = InputTextBox.Text;
+            outputForm = new OutputForm();
+            outputForm.ShowDialog();
         }
+
+
     }
 }
