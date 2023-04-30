@@ -9,5 +9,6 @@ namespace Choe
     static class DATADATADATA
     {
         public static string OutputTextDa;
+
     }
 }

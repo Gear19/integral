@@ -76,7 +76,9 @@ namespace Choe
         {
             DATADATADATA.OutputTextDa = InputTextBox.Text;
             outputForm = new OutputForm();
-            outputForm.ShowDialog();
+            //outputForm.ShowDialog();
+            outputForm.Show();
+
         }
 
     }

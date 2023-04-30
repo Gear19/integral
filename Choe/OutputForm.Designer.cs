@@ -37,10 +37,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Mudak = new System.Windows.Forms.Button();
             this.Cannibal = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -126,34 +128,52 @@
             this.button1.TabIndex = 37;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Mudak
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1000, 562);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 50);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "R";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Mudak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Mudak.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Mudak.BackgroundImage")));
+            this.Mudak.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Mudak.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.Mudak.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Mudak.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Mudak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mudak.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Mudak.ForeColor = System.Drawing.Color.White;
+            this.Mudak.Location = new System.Drawing.Point(1000, 562);
+            this.Mudak.Margin = new System.Windows.Forms.Padding(0);
+            this.Mudak.Name = "Mudak";
+            this.Mudak.Size = new System.Drawing.Size(50, 50);
+            this.Mudak.TabIndex = 13;
+            this.Mudak.UseVisualStyleBackColor = false;
+            this.Mudak.Click += new System.EventHandler(this.Mudak_Click);
             // 
             // Cannibal
             // 
+            this.Cannibal.AutoEllipsis = true;
             this.Cannibal.AutoSize = true;
-            this.Cannibal.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Cannibal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cannibal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Cannibal.ForeColor = System.Drawing.Color.White;
-            this.Cannibal.Location = new System.Drawing.Point(389, 189);
+            this.Cannibal.Location = new System.Drawing.Point(106, 93);
+            this.Cannibal.Margin = new System.Windows.Forms.Padding(0);
+            this.Cannibal.MaximumSize = new System.Drawing.Size(900, 31);
             this.Cannibal.Name = "Cannibal";
-            this.Cannibal.Size = new System.Drawing.Size(62, 46);
+            this.Cannibal.Size = new System.Drawing.Size(162, 31);
             this.Cannibal.TabIndex = 43;
-            this.Cannibal.Text = "as";
+            this.Cannibal.Text = "cos(x)/sin(x)";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::Choe.Properties.Resources.Интеграл1;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 62);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 96);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
             // 
             // OutputForm
             // 
@@ -162,10 +182,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1050, 612);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Cannibal);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Mudak);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OutputForm";
             this.Text = "Form1";
@@ -173,6 +194,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +208,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer sidebarTimer;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Mudak;
         private System.Windows.Forms.Label Cannibal;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

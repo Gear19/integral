@@ -16,6 +16,7 @@ namespace Choe
         {
             InitializeComponent();
         }
+        InputForm inputForm;
         private void OutputForm_Load(object sender, EventArgs e)
         {
             Cannibal.Text = DATADATADATA.OutputTextDa;
@@ -32,6 +33,11 @@ namespace Choe
             base.WndProc(ref m);
         }
 
-        
+        private void Mudak_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            inputForm = new InputForm();
+            inputForm.Show();
+        }
     }
 }
