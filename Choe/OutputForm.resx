@@ -117,47 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sidebarTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABcAAAARCAYAAAA2cze9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAADxJREFUOE/t0qENADAMxMCu3GZ/fRcwdECkgCMGAdGf+ypdBh9P+mC0YLRgtOwU
-        Ef7KgtGC0YLRslMElQ+hPQjQPA+NnAAAAABJRU5ErkJggg==
-</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Иконка" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Иконка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mudak.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        QmCC
-</value>
+  <data name="Интеграл1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Интеграл.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="Без иwqrмени-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без иwqrмени-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Без име11ни-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без име11ни-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="крест3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\крест3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Без имени-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без имени-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Без имени-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без имени-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Интеграл" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Интеграл.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dollars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dollars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
