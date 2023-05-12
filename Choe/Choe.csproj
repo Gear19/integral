@@ -110,6 +110,7 @@
     <None Include="Resources\Без иwqrмени-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Dollars.png" />
     <Content Include="Resources\Интеграл.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -29,6 +29,7 @@ namespace Choe
             
             if (sidebarExpand == true)
             {
+
                 poison -= 5;
                 sidebarContainer.Location = new Point(0, poison);
                 if (poison == 512)
@@ -78,6 +79,74 @@ namespace Choe
             DATADATADATA.OutputTextDa = InputTextBox.Text;
             outputForm = new OutputForm();
             outputForm.Show();
+        }
+
+
+        bool Achee = true;
+        private void Ploti_Click(object sender, EventArgs e)
+        {
+            //PlotiZaKnopki.Start();
+        }
+
+
+        private void Ache_Click(object sender, EventArgs e)
+        {
+            Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
+            Ache.Location = new Point(1051, 613);
+            PanelPodpiski.Location = new Point(1051, 613);
+            //PlotiZaKnopki.Start();
+        }
+
+
+
+        //int x = 0;
+        //private void PlotiZaKnopki_Tick(object sender, EventArgs e)
+        //{
+        //    if (Achee == true)
+        //    {
+        //        x += 5;
+        //        Ache.BackColor = Color.FromArgb(x, 0, 0, 0);
+        //        if (x==200)
+        //        {
+        //            Achee = false;
+        //            PlotiZaKnopki.Stop();
+        //        }
+
+        //    }
+        //    else
+        //    {
+        //        x -= 5;
+        //        Ache.BackColor = Color.FromArgb(x, 0, 0, 0);
+        //        if (x == 0)
+        //        {
+        //            Achee = true;
+        //            Ache.Location = new Point(1051, 613);
+        //            PlotiZaKnopki.Stop();
+        //        }
+        //    }
+        //}
+        
+        private void Ploti_MouseHover(object sender, EventArgs e)
+        {
+            PanelSDollarom.Location = new Point(0, 562);
+        }
+
+      
+
+        private void ButtonDollar_Click(object sender, EventArgs e)
+        {
+            Ache.Location = new Point(0, 0);
+            Ache.BackColor = Color.FromArgb(200, 0, 0, 0);
+            PanelSDollarom.Location = new Point(1051, 613);
+            PanelPodpiski.Location = new Point(350, 206);
+
+        }
+
+        private void NeDollar_Click(object sender, EventArgs e)
+        {
+            Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
+            Ache.Location = new Point(1051, 613);
+            PanelPodpiski.Location = new Point(1051, 613);
         }
     }
 }
