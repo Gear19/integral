@@ -20,6 +20,8 @@ namespace Choe
         private void OutputForm_Load(object sender, EventArgs e)
         {
             Cannibal.Text = DATADATADATA.OutputTextDa;
+            Size size = TextRenderer.MeasureText(Cannibal.Text, Cannibal.Font);
+            Nigger.Location = new Point(97 + size.Width, 93);
         }
         private void button16_Click(object sender, EventArgs e)
         {
@@ -39,5 +41,7 @@ namespace Choe
             inputForm = new InputForm();
             inputForm.Show();
         }
+
+        
     }
 }

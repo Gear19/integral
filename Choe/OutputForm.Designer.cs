@@ -40,6 +40,7 @@
             this.Mudak = new System.Windows.Forms.Button();
             this.Cannibal = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Nigger = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -175,6 +176,21 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
+            // Nigger
+            // 
+            this.Nigger.AutoEllipsis = true;
+            this.Nigger.AutoSize = true;
+            this.Nigger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Nigger.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Nigger.ForeColor = System.Drawing.Color.White;
+            this.Nigger.Location = new System.Drawing.Point(268, 93);
+            this.Nigger.Margin = new System.Windows.Forms.Padding(0);
+            this.Nigger.MaximumSize = new System.Drawing.Size(900, 31);
+            this.Nigger.Name = "Nigger";
+            this.Nigger.Size = new System.Drawing.Size(42, 31);
+            this.Nigger.TabIndex = 43;
+            this.Nigger.Text = "dx";
+            // 
             // OutputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,6 +199,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1050, 612);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Nigger);
             this.Controls.Add(this.Cannibal);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -211,5 +228,6 @@
         private System.Windows.Forms.Button Mudak;
         private System.Windows.Forms.Label Cannibal;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Nigger;
     }
 }
