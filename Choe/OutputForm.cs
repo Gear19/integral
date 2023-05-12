@@ -23,7 +23,7 @@ namespace Choe
         }
         private void button16_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void label2_MouseDown(object sender, MouseEventArgs e)
@@ -35,7 +35,7 @@ namespace Choe
 
         private void Mudak_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             inputForm = new InputForm();
             inputForm.Show();
         }

@@ -69,17 +69,15 @@ namespace Choe
 
         private void button16_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void Uebok_Click(object sender, EventArgs e)
         {
+            this.Hide();
             DATADATADATA.OutputTextDa = InputTextBox.Text;
             outputForm = new OutputForm();
-            //outputForm.ShowDialog();
             outputForm.Show();
-
         }
-
     }
 }

@@ -100,13 +100,13 @@
             this.InputTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InputTextBox.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.InputTextBox.ForeColor = System.Drawing.Color.Transparent;
-            this.InputTextBox.Location = new System.Drawing.Point(247, 242);
+            this.InputTextBox.Location = new System.Drawing.Point(250, 242);
             this.InputTextBox.Margin = new System.Windows.Forms.Padding(0);
             this.InputTextBox.MaximumSize = new System.Drawing.Size(780, 33);
-            this.InputTextBox.MinimumSize = new System.Drawing.Size(400, 33);
+            this.InputTextBox.MinimumSize = new System.Drawing.Size(550, 33);
             this.InputTextBox.Name = "InputTextBox";
             this.InputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.InputTextBox.Size = new System.Drawing.Size(400, 33);
+            this.InputTextBox.Size = new System.Drawing.Size(550, 33);
             this.InputTextBox.TabIndex = 7;
             this.InputTextBox.TextChanged += new System.EventHandler(this.InputTextBox_TextChanged);
             // 
@@ -1030,7 +1030,7 @@
             this.Uebok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Uebok.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Uebok.ForeColor = System.Drawing.Color.White;
-            this.Uebok.Location = new System.Drawing.Point(400, 299);
+            this.Uebok.Location = new System.Drawing.Point(475, 301);
             this.Uebok.Margin = new System.Windows.Forms.Padding(0);
             this.Uebok.Name = "Uebok";
             this.Uebok.Size = new System.Drawing.Size(100, 25);
