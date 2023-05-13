@@ -63,6 +63,16 @@ namespace Choe.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dollars {
+            get {
+                object obj = ResourceManager.GetObject("Dollars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Без_иwqrмени_1 {
             get {
                 object obj = ResourceManager.GetObject("Без иwqrмени-1", resourceCulture);
