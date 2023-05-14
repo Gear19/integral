@@ -111,7 +111,7 @@ namespace Choe
         //            Achee = false;
         //            PlotiZaKnopki.Stop();
         //        }
-
+        //
         //    }
         //    else
         //    {
