@@ -125,7 +125,7 @@ namespace Choe
         //        }
         //    }
         //}
-        
+        //
         private void Ploti_MouseHover(object sender, EventArgs e)
         {
             PanelSDollarom.Location = new Point(0, 562);
