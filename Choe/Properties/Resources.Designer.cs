@@ -113,6 +113,16 @@ namespace Choe.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Возврат {
+            get {
+                object obj = ResourceManager.GetObject("Возврат", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Иконка {
             get {
                 object obj = ResourceManager.GetObject("Иконка", resourceCulture);
@@ -146,6 +156,16 @@ namespace Choe.Properties {
         internal static System.Drawing.Bitmap крест3 {
             get {
                 object obj = ResourceManager.GetObject("крест3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Назад {
+            get {
+                object obj = ResourceManager.GetObject("Назад", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

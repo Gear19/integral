@@ -13,13 +13,13 @@ namespace Choe
     public partial class InputForm : Form
     {
         OutputForm outputForm;
-        bool sidebarExpand = true;
-        int poison = 562;
+        
         public InputForm()
         {
             InitializeComponent();
         }
-
+        bool sidebarExpand = true;
+        int poison = 562;
         private void pidor_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
@@ -82,18 +82,26 @@ namespace Choe
         }
 
 
-        bool Achee = true;
+        //bool Achee = true;
         private void Ploti_Click(object sender, EventArgs e)
         {
             //PlotiZaKnopki.Start();
         }
 
-
+        bool acheKuda = true;
         private void Ache_Click(object sender, EventArgs e)
         {
-            Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Ache.Location = new Point(1051, 613);
-            PanelPodpiski.Location = new Point(1051, 613);
+            if(acheKuda == true)
+            {
+                Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
+                Ache.Location = new Point(1051, 613);
+                PanelPodpiski.Location = new Point(1051, 613);
+            }
+            else
+            {
+                Ache.Location = new Point(1051, 613);
+                menuTimer.Start();
+            }
             //PlotiZaKnopki.Start();
         }
 
@@ -135,6 +143,7 @@ namespace Choe
 
         private void ButtonDollar_Click(object sender, EventArgs e)
         {
+            acheKuda = true;
             Ache.Location = new Point(0, 0);
             Ache.BackColor = Color.FromArgb(200, 0, 0, 0);
             PanelSDollarom.Location = new Point(1051, 613);
@@ -148,5 +157,52 @@ namespace Choe
             Ache.Location = new Point(1051, 613);
             PanelPodpiski.Location = new Point(1051, 613);
         }
+
+
+        bool menuExpand = true;
+        int slimShady = -200;
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            acheKuda = false;
+            menuTimer.Start();
+            Ache.Location = new Point(0, 27);
+            Ache.BackColor = Color.FromArgb(200, 0, 0, 0);
+            
+        }
+
+        private void menuTimer_Tick(object sender, EventArgs e)
+        {
+            if (menuExpand == true)
+            {
+
+                slimShady += 10;
+                MenuPanel.Location = new Point(slimShady, 27);
+                if (slimShady == 0)
+                {
+                    menuExpand = false;
+                    menuTimer.Stop();
+                }
+
+            }
+            else
+            {
+                slimShady -= 10;
+                MenuPanel.Location = new Point(slimShady, 27);
+                if (slimShady == -200)
+                {
+                    menuExpand = true;
+                    menuTimer.Stop();
+                }
+
+            }
+        }
+
+        private void NazadButton_Click(object sender, EventArgs e)
+        {
+            menuTimer.Start();
+            Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
+            Ache.Location = new Point(1051, 613);
+        }
+        
     }
 }
