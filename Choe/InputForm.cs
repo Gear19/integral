@@ -15,9 +15,11 @@ namespace Choe
         OutputForm outputForm;
         bool sidebarExpand = true;
         int poison = 562;
+        private static Translator _translator;
         public InputForm()
         {
             InitializeComponent();
+            _translator = new Translator();
         }
 
         private void pidor_Click(object sender, EventArgs e)
@@ -75,8 +77,21 @@ namespace Choe
 
         private void Uebok_Click(object sender, EventArgs e)
         {
+            _translator = new Translator();
+
+            string newIntegral = InputTextBox.Text;
+
+            if (_translator.CheckSyntax(newIntegral))
+            {
+                string F = _translator.Integral(newIntegral, "x");
+                DATADATADATA.OutputTextDa = F;
+            }
+            else
+            {
+                DATADATADATA.OutputTextDa = "Wrong Syntax";
+            }
+
             this.Hide();
-            DATADATADATA.OutputTextDa = InputTextBox.Text;
             outputForm = new OutputForm();
             outputForm.Show();
         }
