@@ -203,6 +203,6 @@ namespace Choe
             Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
             Ache.Location = new Point(1051, 613);
         }
-        
+        //239487432234324
     }
 }
