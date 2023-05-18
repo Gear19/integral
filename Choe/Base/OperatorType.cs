@@ -1,0 +1,29 @@
+﻿namespace Choe
+{
+  public enum OperatorType
+  {
+    Unknown,
+    Add,
+    Subtract,
+    Multiply,
+    Divide,
+    Dot,
+    Cross,
+    Power,
+    Question,
+    Number,
+    Minus,
+    Tilde,
+    SquareRoot,
+    Derivative,
+    Integral,
+    Delta,
+    Sum,
+    Product,
+    Factorial,
+    Apostrophe,
+    Accent,
+    Absolute,
+    Norm,
+  }
+}
