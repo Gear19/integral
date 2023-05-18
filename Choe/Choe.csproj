@@ -34,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mathematics">
-      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\Mathematics.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="NRTE">
-      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\NRTE.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\NRTE.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -165,14 +165,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -193,10 +187,8 @@
     <None Include="Resources\Без име11ни-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\крест3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Иконка.png" />
+    <None Include="Resources\крест3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Интеграл.png" />
@@ -205,7 +197,16 @@
     <None Include="Resources\Без иwqrмени-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Интеграл1.jpg" />
+    <None Include="Resources\Интеграл1.png" />
+    <None Include="Resources\Назад.png" />
+    <None Include="Resources\крест31.jpg" />
     <None Include="Resources\Dollars.png" />
+    <None Include="Resources\Dollars1.png" />
+    <None Include="Resources\Без имени-11.jpg" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\Возврат.png" />
+    <Content Include="Resources\Иконка1.png" />
     <Content Include="Resources\Интеграл.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

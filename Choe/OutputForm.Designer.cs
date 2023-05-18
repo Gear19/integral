@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OutputForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,10 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            this.Mudak = new System.Windows.Forms.Button();
             this.Cannibal = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Nigger = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Mudak = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +59,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Choe.Properties.Resources.Иконка;
             this.pictureBox2.Location = new System.Drawing.Point(12, 5);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
@@ -88,7 +86,6 @@
             this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(42)))), ((int)(((byte)(47)))));
             this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(42)))), ((int)(((byte)(47)))));
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Image = global::Choe.Properties.Resources.крест3;
             this.button16.Location = new System.Drawing.Point(1001, -1);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
@@ -115,7 +112,6 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -128,25 +124,6 @@
             this.button1.Size = new System.Drawing.Size(23, 17);
             this.button1.TabIndex = 37;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // Mudak
-            // 
-            this.Mudak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Mudak.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Mudak.BackgroundImage")));
-            this.Mudak.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Mudak.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.Mudak.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Mudak.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Mudak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Mudak.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Mudak.ForeColor = System.Drawing.Color.White;
-            this.Mudak.Location = new System.Drawing.Point(1000, 562);
-            this.Mudak.Margin = new System.Windows.Forms.Padding(0);
-            this.Mudak.Name = "Mudak";
-            this.Mudak.Size = new System.Drawing.Size(50, 50);
-            this.Mudak.TabIndex = 13;
-            this.Mudak.UseVisualStyleBackColor = false;
-            this.Mudak.Click += new System.EventHandler(this.Mudak_Click);
             // 
             // Cannibal
             // 
@@ -163,19 +140,6 @@
             this.Cannibal.TabIndex = 43;
             this.Cannibal.Text = "cos(x)/sin(x)";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::Choe.Properties.Resources.Интеграл1;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 62);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 96);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
-            // 
             // Nigger
             // 
             this.Nigger.AutoEllipsis = true;
@@ -190,6 +154,35 @@
             this.Nigger.Size = new System.Drawing.Size(42, 31);
             this.Nigger.TabIndex = 43;
             this.Nigger.Text = "dx";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 62);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 96);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Mudak
+            // 
+            this.Mudak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Mudak.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Mudak.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.Mudak.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Mudak.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Mudak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mudak.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Mudak.ForeColor = System.Drawing.Color.White;
+            this.Mudak.Location = new System.Drawing.Point(1000, 562);
+            this.Mudak.Margin = new System.Windows.Forms.Padding(0);
+            this.Mudak.Name = "Mudak";
+            this.Mudak.Size = new System.Drawing.Size(50, 50);
+            this.Mudak.TabIndex = 13;
+            this.Mudak.UseVisualStyleBackColor = false;
+            this.Mudak.Click += new System.EventHandler(this.Mudak_Click);
             // 
             // OutputForm
             // 

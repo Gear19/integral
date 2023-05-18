@@ -13,8 +13,7 @@ namespace Choe
     public partial class InputForm : Form
     {
         OutputForm outputForm;
-        bool sidebarExpand = true;
-        int poison = 562;
+        
         private static Translator _translator;
         public InputForm()
         {
@@ -22,6 +21,8 @@ namespace Choe
             _translator = new Translator();
         }
 
+        bool sidebarExpand = true;
+        int poison = 562;
         private void pidor_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
@@ -162,6 +163,46 @@ namespace Choe
             Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
             Ache.Location = new Point(1051, 613);
             PanelPodpiski.Location = new Point(1051, 613);
+        }
+
+        
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuButton_Click(object sender, EventArgs e)
+        {
+            menuTimer.Start();
+        }
+        bool menubarExpand = true;
+        int slimShady = -200;
+        private void menuTimer_Tick(object sender, EventArgs e)
+        {
+            if (menubarExpand == true)
+            {
+
+                slimShady += 5;
+                menu.Location = new Point(slimShady, 27);
+                if (slimShady == 0)
+                {
+                    menubarExpand = false;
+                    menuTimer.Stop();
+                }
+
+            }
+            else
+            {
+                slimShady -= 5;
+                menu.Location = new Point(slimShady, 27);
+                if (slimShady == -200)
+                {
+                    menubarExpand = true;
+                    menuTimer.Stop();
+                }
+
+            }
         }
     }
 }

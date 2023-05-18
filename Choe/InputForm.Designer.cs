@@ -84,22 +84,26 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.MenuButton = new System.Windows.Forms.Button();
             this.Uebok = new System.Windows.Forms.Button();
             this.Ache = new System.Windows.Forms.Panel();
             this.PlotiZaKnopki = new System.Windows.Forms.Timer(this.components);
             this.ButtonDollar = new System.Windows.Forms.Button();
             this.PanelSDollarom = new System.Windows.Forms.Panel();
             this.PanelPodpiski = new System.Windows.Forms.Panel();
-            this.NeDollar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.NeDollar = new System.Windows.Forms.Button();
+            this.menuTimer = new System.Windows.Forms.Timer(this.components);
+            this.menu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.sidebarContainer.SuspendLayout();
             this.panel5.SuspendLayout();
             this.PanelSDollarom.SuspendLayout();
             this.PanelPodpiski.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // InputTextBox
@@ -156,7 +160,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Choe.Properties.Resources.Иконка;
             this.pictureBox2.Location = new System.Drawing.Point(12, 5);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
@@ -184,7 +187,6 @@
             this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(42)))), ((int)(((byte)(47)))));
             this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(42)))), ((int)(((byte)(47)))));
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Image = global::Choe.Properties.Resources.крест3;
             this.button16.Location = new System.Drawing.Point(1001, -1);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
@@ -700,6 +702,7 @@
             this.button22.Size = new System.Drawing.Size(50, 50);
             this.button22.TabIndex = 36;
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button5
             // 
@@ -1001,21 +1004,21 @@
             this.label4.TabIndex = 36;
             this.label4.Text = "Подробное решение";
             // 
-            // button1
+            // MenuButton
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 39);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 17);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
+            this.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.MenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuButton.FlatAppearance.BorderSize = 0;
+            this.MenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.MenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MenuButton.Location = new System.Drawing.Point(12, 39);
+            this.MenuButton.Margin = new System.Windows.Forms.Padding(0);
+            this.MenuButton.Name = "MenuButton";
+            this.MenuButton.Size = new System.Drawing.Size(23, 17);
+            this.MenuButton.TabIndex = 4;
+            this.MenuButton.UseVisualStyleBackColor = true;
+            this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // Uebok
             // 
@@ -1049,7 +1052,6 @@
             // ButtonDollar
             // 
             this.ButtonDollar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.ButtonDollar.BackgroundImage = global::Choe.Properties.Resources.Dollars;
             this.ButtonDollar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ButtonDollar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonDollar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
@@ -1087,34 +1089,6 @@
             this.PanelPodpiski.Size = new System.Drawing.Size(350, 200);
             this.PanelPodpiski.TabIndex = 49;
             // 
-            // NeDollar
-            // 
-            this.NeDollar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.NeDollar.FlatAppearance.BorderSize = 0;
-            this.NeDollar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NeDollar.ForeColor = System.Drawing.Color.White;
-            this.NeDollar.Location = new System.Drawing.Point(138, 160);
-            this.NeDollar.Margin = new System.Windows.Forms.Padding(0);
-            this.NeDollar.Name = "NeDollar";
-            this.NeDollar.Size = new System.Drawing.Size(74, 24);
-            this.NeDollar.TabIndex = 0;
-            this.NeDollar.Text = "Отмена";
-            this.NeDollar.UseVisualStyleBackColor = false;
-            this.NeDollar.Click += new System.EventHandler(this.NeDollar_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(0, 2);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(355, 34);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Хотите пользоваться всеми возможностями нашего \r\nприложения?  Купите подписку за " +
-    "2,99$ в месяц.";
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
@@ -1130,13 +1104,67 @@
             this.button3.Text = "Оформить за 2,99$";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(0, 2);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(355, 34);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Хотите пользоваться всеми возможностями нашего \r\nприложения?  Купите подписку за " +
+    "2,99$ в месяц.";
+            // 
+            // NeDollar
+            // 
+            this.NeDollar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.NeDollar.FlatAppearance.BorderSize = 0;
+            this.NeDollar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NeDollar.ForeColor = System.Drawing.Color.White;
+            this.NeDollar.Location = new System.Drawing.Point(138, 160);
+            this.NeDollar.Margin = new System.Windows.Forms.Padding(0);
+            this.NeDollar.Name = "NeDollar";
+            this.NeDollar.Size = new System.Drawing.Size(74, 24);
+            this.NeDollar.TabIndex = 0;
+            this.NeDollar.Text = "Отмена";
+            this.NeDollar.UseVisualStyleBackColor = false;
+            this.NeDollar.Click += new System.EventHandler(this.NeDollar_Click);
+            // 
+            // menuTimer
+            // 
+            this.menuTimer.Interval = 1;
+            this.menuTimer.Tick += new System.EventHandler(this.menuTimer_Tick);
+            // 
+            // menu
+            // 
+            this.menu.Controls.Add(this.button1);
+            this.menu.Location = new System.Drawing.Point(-200, 27);
+            this.menu.Margin = new System.Windows.Forms.Padding(0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(200, 585);
+            this.menu.TabIndex = 50;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(9, 12);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 26);
+            this.button1.TabIndex = 51;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1050, 612);
+            this.Controls.Add(this.menu);
             this.Controls.Add(this.PanelPodpiski);
             this.Controls.Add(this.Ache);
             this.Controls.Add(this.PanelSDollarom);
@@ -1147,7 +1175,7 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.InputTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.MenuButton);
             this.Controls.Add(this.sidebarContainer);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.Black;
@@ -1163,13 +1191,14 @@
             this.PanelSDollarom.ResumeLayout(false);
             this.PanelPodpiski.ResumeLayout(false);
             this.PanelPodpiski.PerformLayout();
+            this.menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button MenuButton;
         private System.Windows.Forms.TextBox InputTextBox;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
@@ -1233,6 +1262,9 @@
         private System.Windows.Forms.Button NeDollar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Timer menuTimer;
+        private System.Windows.Forms.Panel menu;
+        private System.Windows.Forms.Button button1;
     }
 }
 
