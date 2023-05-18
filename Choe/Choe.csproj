@@ -33,9 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mathematics">
+      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="NRTE">
+      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\NRTE.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
