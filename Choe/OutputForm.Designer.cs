@@ -60,6 +60,9 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.ErrorImage = global::Choe.Properties.Resources.Иконка;
+            this.pictureBox2.Image = global::Choe.Properties.Resources.Иконка;
+            this.pictureBox2.InitialImage = global::Choe.Properties.Resources.Иконка;
             this.pictureBox2.Location = new System.Drawing.Point(12, 5);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
