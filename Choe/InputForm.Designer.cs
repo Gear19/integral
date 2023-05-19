@@ -84,7 +84,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.MenuButton = new System.Windows.Forms.Button();
+            this.menuButton = new System.Windows.Forms.Button();
             this.Uebok = new System.Windows.Forms.Button();
             this.Ache = new System.Windows.Forms.Panel();
             this.PlotiZaKnopki = new System.Windows.Forms.Timer(this.components);
@@ -94,16 +94,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.NeDollar = new System.Windows.Forms.Button();
+            this.MenuPanel = new System.Windows.Forms.Panel();
+            this.NazadButton = new System.Windows.Forms.Button();
             this.menuTimer = new System.Windows.Forms.Timer(this.components);
-            this.menu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.sidebarContainer.SuspendLayout();
             this.panel5.SuspendLayout();
             this.PanelSDollarom.SuspendLayout();
             this.PanelPodpiski.SuspendLayout();
-            this.menu.SuspendLayout();
+            this.MenuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // InputTextBox
@@ -160,6 +160,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Choe.Properties.Resources.Иконка;
             this.pictureBox2.Location = new System.Drawing.Point(12, 5);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
@@ -187,6 +188,7 @@
             this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(42)))), ((int)(((byte)(47)))));
             this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(42)))), ((int)(((byte)(47)))));
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Image = global::Choe.Properties.Resources.крест3;
             this.button16.Location = new System.Drawing.Point(1001, -1);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
@@ -702,7 +704,6 @@
             this.button22.Size = new System.Drawing.Size(50, 50);
             this.button22.TabIndex = 36;
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button5
             // 
@@ -1004,21 +1005,22 @@
             this.label4.TabIndex = 36;
             this.label4.Text = "Подробное решение";
             // 
-            // MenuButton
+            // menuButton
             // 
-            this.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.MenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuButton.FlatAppearance.BorderSize = 0;
-            this.MenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.MenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MenuButton.Location = new System.Drawing.Point(12, 39);
-            this.MenuButton.Margin = new System.Windows.Forms.Padding(0);
-            this.MenuButton.Name = "MenuButton";
-            this.MenuButton.Size = new System.Drawing.Size(23, 17);
-            this.MenuButton.TabIndex = 4;
-            this.MenuButton.UseVisualStyleBackColor = true;
-            this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
+            this.menuButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuButton.BackgroundImage")));
+            this.menuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.FlatAppearance.BorderSize = 0;
+            this.menuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.menuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menuButton.Location = new System.Drawing.Point(12, 39);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(0);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(23, 17);
+            this.menuButton.TabIndex = 4;
+            this.menuButton.UseVisualStyleBackColor = true;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // Uebok
             // 
@@ -1052,6 +1054,7 @@
             // ButtonDollar
             // 
             this.ButtonDollar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.ButtonDollar.BackgroundImage = global::Choe.Properties.Resources.Dollars;
             this.ButtonDollar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ButtonDollar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonDollar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
@@ -1132,39 +1135,45 @@
             this.NeDollar.UseVisualStyleBackColor = false;
             this.NeDollar.Click += new System.EventHandler(this.NeDollar_Click);
             // 
+            // MenuPanel
+            // 
+            this.MenuPanel.Controls.Add(this.NazadButton);
+            this.MenuPanel.Location = new System.Drawing.Point(-200, 27);
+            this.MenuPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.MenuPanel.Name = "MenuPanel";
+            this.MenuPanel.Size = new System.Drawing.Size(200, 585);
+            this.MenuPanel.TabIndex = 50;
+            // 
+            // NazadButton
+            // 
+            this.NazadButton.BackgroundImage = global::Choe.Properties.Resources.Назад;
+            this.NazadButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NazadButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.NazadButton.FlatAppearance.BorderSize = 0;
+            this.NazadButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.NazadButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.NazadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NazadButton.Location = new System.Drawing.Point(10, 10);
+            this.NazadButton.Margin = new System.Windows.Forms.Padding(0);
+            this.NazadButton.Name = "NazadButton";
+            this.NazadButton.Size = new System.Drawing.Size(26, 26);
+            this.NazadButton.TabIndex = 0;
+            this.NazadButton.UseVisualStyleBackColor = true;
+            this.NazadButton.Click += new System.EventHandler(this.NazadButton_Click);
+            // 
             // menuTimer
             // 
             this.menuTimer.Interval = 1;
             this.menuTimer.Tick += new System.EventHandler(this.menuTimer_Tick);
-            // 
-            // menu
-            // 
-            this.menu.Controls.Add(this.button1);
-            this.menu.Location = new System.Drawing.Point(-200, 27);
-            this.menu.Margin = new System.Windows.Forms.Padding(0);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(200, 585);
-            this.menu.TabIndex = 50;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 26);
-            this.button1.TabIndex = 51;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1050, 612);
-            this.Controls.Add(this.menu);
+            this.Controls.Add(this.MenuPanel);
             this.Controls.Add(this.PanelPodpiski);
             this.Controls.Add(this.Ache);
             this.Controls.Add(this.PanelSDollarom);
@@ -1175,8 +1184,8 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.InputTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.MenuButton);
             this.Controls.Add(this.sidebarContainer);
+            this.Controls.Add(this.menuButton);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1191,14 +1200,14 @@
             this.PanelSDollarom.ResumeLayout(false);
             this.PanelPodpiski.ResumeLayout(false);
             this.PanelPodpiski.PerformLayout();
-            this.menu.ResumeLayout(false);
+            this.MenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button MenuButton;
+        private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.TextBox InputTextBox;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
@@ -1262,9 +1271,9 @@
         private System.Windows.Forms.Button NeDollar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel MenuPanel;
         private System.Windows.Forms.Timer menuTimer;
-        private System.Windows.Forms.Panel menu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button NazadButton;
     }
 }
 

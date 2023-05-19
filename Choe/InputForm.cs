@@ -14,13 +14,10 @@ namespace Choe
     {
         OutputForm outputForm;
         
-        private static Translator _translator;
         public InputForm()
         {
             InitializeComponent();
-            _translator = new Translator();
         }
-
         bool sidebarExpand = true;
         int poison = 562;
         private void pidor_Click(object sender, EventArgs e)
@@ -78,38 +75,33 @@ namespace Choe
 
         private void Uebok_Click(object sender, EventArgs e)
         {
-            _translator = new Translator();
-
-            string newIntegral = InputTextBox.Text;
-
-            if (_translator.CheckSyntax(newIntegral))
-            {
-                string F = _translator.Integral(newIntegral, "x");
-                DATADATADATA.OutputTextDa = F;
-            }
-            else
-            {
-                DATADATADATA.OutputTextDa = "Wrong Syntax";
-            }
-
             this.Hide();
+            DATADATADATA.OutputTextDa = InputTextBox.Text;
             outputForm = new OutputForm();
             outputForm.Show();
         }
 
 
-        bool Achee = true;
+        //bool Achee = true;
         private void Ploti_Click(object sender, EventArgs e)
         {
             //PlotiZaKnopki.Start();
         }
 
-
+        bool acheKuda = true;
         private void Ache_Click(object sender, EventArgs e)
         {
-            Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
-            Ache.Location = new Point(1051, 613);
-            PanelPodpiski.Location = new Point(1051, 613);
+            if(acheKuda == true)
+            {
+                Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
+                Ache.Location = new Point(1051, 613);
+                PanelPodpiski.Location = new Point(1051, 613);
+            }
+            else
+            {
+                Ache.Location = new Point(1051, 613);
+                menuTimer.Start();
+            }
             //PlotiZaKnopki.Start();
         }
 
@@ -151,6 +143,7 @@ namespace Choe
 
         private void ButtonDollar_Click(object sender, EventArgs e)
         {
+            acheKuda = true;
             Ache.Location = new Point(0, 0);
             Ache.BackColor = Color.FromArgb(200, 0, 0, 0);
             PanelSDollarom.Location = new Point(1051, 613);
@@ -165,44 +158,51 @@ namespace Choe
             PanelPodpiski.Location = new Point(1051, 613);
         }
 
-        
 
-        private void button22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MenuButton_Click(object sender, EventArgs e)
-        {
-            menuTimer.Start();
-        }
-        bool menubarExpand = true;
+        bool menuExpand = true;
         int slimShady = -200;
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            acheKuda = false;
+            menuTimer.Start();
+            Ache.Location = new Point(0, 27);
+            Ache.BackColor = Color.FromArgb(200, 0, 0, 0);
+            
+        }
+
         private void menuTimer_Tick(object sender, EventArgs e)
         {
-            if (menubarExpand == true)
+            if (menuExpand == true)
             {
 
-                slimShady += 5;
-                menu.Location = new Point(slimShady, 27);
+                slimShady += 10;
+                MenuPanel.Location = new Point(slimShady, 27);
                 if (slimShady == 0)
                 {
-                    menubarExpand = false;
+                    menuExpand = false;
                     menuTimer.Stop();
                 }
 
             }
             else
             {
-                slimShady -= 5;
-                menu.Location = new Point(slimShady, 27);
+                slimShady -= 10;
+                MenuPanel.Location = new Point(slimShady, 27);
                 if (slimShady == -200)
                 {
-                    menubarExpand = true;
+                    menuExpand = true;
                     menuTimer.Stop();
                 }
 
             }
         }
+
+        private void NazadButton_Click(object sender, EventArgs e)
+        {
+            menuTimer.Start();
+            Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
+            Ache.Location = new Point(1051, 613);
+        }
+        //239487432234324
     }
 }
