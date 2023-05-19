@@ -13,10 +13,11 @@ namespace Choe
     public partial class InputForm : Form
     {
         OutputForm outputForm;
-        
+        Translator translator;
         public InputForm()
         {
             InitializeComponent();
+            translator = new Translator();
         }
         bool sidebarExpand = true;
         int poison = 562;
@@ -75,8 +76,19 @@ namespace Choe
 
         private void Uebok_Click(object sender, EventArgs e)
         {
+            string newIntegral = InputTextBox.Text;
+
+            if (translator.CheckSyntax(newIntegral))
+            {
+                string F = translator.Integral(newIntegral, "x");
+                DATADATADATA.OutputTextDa = F;
+            }
+            else
+            {
+                DATADATADATA.OutputTextDa = "Wrong Syntax";
+            }
+
             this.Hide();
-            DATADATADATA.OutputTextDa = InputTextBox.Text;
             outputForm = new OutputForm();
             outputForm.Show();
         }
