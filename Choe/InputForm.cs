@@ -14,6 +14,8 @@ namespace Choe
     {
         OutputForm outputForm;
         Translator translator;
+        Registration registration;
+
         public InputForm()
         {
             InitializeComponent();
@@ -215,6 +217,12 @@ namespace Choe
             menuTimer.Start();
             Ache.BackColor = Color.FromArgb(0, 0, 0, 0);
             Ache.Location = new Point(1051, 613);
+        }
+
+        private void RegButton_Click(object sender, EventArgs e)
+        {
+            registration = new Registration();
+            registration.Show();
         }
         //239487432234324
     }

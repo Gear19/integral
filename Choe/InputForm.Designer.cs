@@ -91,7 +91,7 @@
             this.ButtonDollar = new System.Windows.Forms.Button();
             this.PanelSDollarom = new System.Windows.Forms.Panel();
             this.PanelPodpiski = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.RegButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.NeDollar = new System.Windows.Forms.Button();
             this.MenuPanel = new System.Windows.Forms.Panel();
@@ -1084,7 +1084,7 @@
             // PanelPodpiski
             // 
             this.PanelPodpiski.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.PanelPodpiski.Controls.Add(this.button3);
+            this.PanelPodpiski.Controls.Add(this.RegButton);
             this.PanelPodpiski.Controls.Add(this.label5);
             this.PanelPodpiski.Controls.Add(this.NeDollar);
             this.PanelPodpiski.Location = new System.Drawing.Point(1051, 613);
@@ -1092,20 +1092,21 @@
             this.PanelPodpiski.Size = new System.Drawing.Size(350, 200);
             this.PanelPodpiski.TabIndex = 49;
             // 
-            // button3
+            // RegButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(88, 82);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 50);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Оформить за 2,99$";
-            this.button3.UseVisualStyleBackColor = false;
+            this.RegButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.RegButton.FlatAppearance.BorderSize = 0;
+            this.RegButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegButton.ForeColor = System.Drawing.Color.White;
+            this.RegButton.Location = new System.Drawing.Point(88, 82);
+            this.RegButton.Margin = new System.Windows.Forms.Padding(0);
+            this.RegButton.Name = "RegButton";
+            this.RegButton.Size = new System.Drawing.Size(174, 50);
+            this.RegButton.TabIndex = 2;
+            this.RegButton.Text = "Оформить за 2,99$";
+            this.RegButton.UseVisualStyleBackColor = false;
+            this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
             // 
             // label5
             // 
@@ -1270,7 +1271,7 @@
         private System.Windows.Forms.Panel PanelPodpiski;
         private System.Windows.Forms.Button NeDollar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button RegButton;
         private System.Windows.Forms.Panel MenuPanel;
         private System.Windows.Forms.Timer menuTimer;
         private System.Windows.Forms.Button NazadButton;

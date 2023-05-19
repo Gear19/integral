@@ -25,7 +25,7 @@ namespace Choe
 
         private void button16_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void label2_MouseDown(object sender, MouseEventArgs e)
