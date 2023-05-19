@@ -63,6 +63,36 @@ namespace Choe.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap credit_card_PNG207 {
+            get {
+                object obj = ResourceManager.GetObject("credit_card_PNG207", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap credit_card_PNG2071 {
+            get {
+                object obj = ResourceManager.GetObject("credit_card_PNG2071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap credit_card_PNG2072 {
+            get {
+                object obj = ResourceManager.GetObject("credit_card_PNG2072", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dollars {
             get {
                 object obj = ResourceManager.GetObject("Dollars", resourceCulture);

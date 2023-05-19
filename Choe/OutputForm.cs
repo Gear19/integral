@@ -20,6 +20,7 @@ namespace Choe
         private void OutputForm_Load(object sender, EventArgs e)
         {
             Cannibal.Text = DATADATADATA.OutputTextDa;
+            otvet.Text = DATADATADATA.OutputTextNet;
             Size size = TextRenderer.MeasureText(Cannibal.Text, Cannibal.Font);
             Nigger.Location = new Point(97 + size.Width, 93);
         }

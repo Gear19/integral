@@ -77,15 +77,16 @@ namespace Choe
         private void Uebok_Click(object sender, EventArgs e)
         {
             string newIntegral = InputTextBox.Text;
+            DATADATADATA.OutputTextDa = InputTextBox.Text;
 
             if (translator.CheckSyntax(newIntegral))
             {
                 string F = translator.Integral(newIntegral, "x");
-                DATADATADATA.OutputTextDa = F;
+                DATADATADATA.OutputTextNet = F;
             }
             else
             {
-                DATADATADATA.OutputTextDa = "Wrong Syntax";
+                DATADATADATA.OutputTextNet = "Wrong Syntax";
             }
 
             this.Hide();
