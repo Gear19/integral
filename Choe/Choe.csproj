@@ -35,11 +35,11 @@
   <ItemGroup>
     <Reference Include="Mathematics, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\Mathematics.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="NRTE, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\IntegralApp1\IntegralApp\lib\NRTE.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\NRTE.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -94,6 +94,18 @@
     <Compile Include="Base\ValueToString.cs" />
     <Compile Include="Base\VectorData.cs" />
     <Compile Include="DATADATADATA.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Integral\AlgorithmIntegrator.cs" />
     <Compile Include="Integral\AutoIntegralContext.cs" />
     <Compile Include="Integral\FunctionalIntegral.cs" />
@@ -158,6 +170,12 @@
     <Compile Include="Syntactic\UnaryOperatorExpression.cs" />
     <Compile Include="Syntactic\UnexpectedParanthesis.cs" />
     <Compile Include="Syntactic\VariableExpression.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InputForm.resx">
       <DependentUpon>InputForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +227,7 @@
     <None Include="Resources\Назад.png" />
     <None Include="Resources\Dollars.png" />
     <None Include="Resources\Возврат.png" />
+    <None Include="Resources\credit_card_PNG207.png" />
     <Content Include="Resources\Интеграл.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
