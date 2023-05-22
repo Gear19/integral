@@ -40,6 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Mudak = new System.Windows.Forms.Button();
             this.otvet = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -183,13 +184,28 @@
             this.otvet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otvet.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.otvet.ForeColor = System.Drawing.Color.White;
-            this.otvet.Location = new System.Drawing.Point(106, 230);
+            this.otvet.Location = new System.Drawing.Point(202, 229);
             this.otvet.Margin = new System.Windows.Forms.Padding(0);
             this.otvet.MaximumSize = new System.Drawing.Size(900, 31);
             this.otvet.Name = "otvet";
             this.otvet.Size = new System.Drawing.Size(162, 31);
             this.otvet.TabIndex = 45;
             this.otvet.Text = "cos(x)/sin(x)";
+            // 
+            // label1
+            // 
+            this.label1.AutoEllipsis = true;
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(106, 229);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.MaximumSize = new System.Drawing.Size(900, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 31);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Ответ:";
             // 
             // OutputForm
             // 
@@ -198,6 +214,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1050, 612);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.otvet);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Nigger);
@@ -229,5 +246,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Nigger;
         private System.Windows.Forms.Label otvet;
+        private System.Windows.Forms.Label label1;
     }
 }
