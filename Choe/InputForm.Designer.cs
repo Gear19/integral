@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputForm));
             this.InputTextBox = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -83,7 +82,6 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.menuButton = new System.Windows.Forms.Button();
             this.Uebok = new System.Windows.Forms.Button();
             this.Ache = new System.Windows.Forms.Panel();
@@ -121,19 +119,6 @@
             this.InputTextBox.Size = new System.Drawing.Size(550, 33);
             this.InputTextBox.TabIndex = 7;
             this.InputTextBox.TextChanged += new System.EventHandler(this.InputTextBox_TextChanged);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox1.Location = new System.Drawing.Point(1002, 45);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(12, 11);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -994,17 +979,6 @@
             this.button15.TabIndex = 36;
             this.button15.UseVisualStyleBackColor = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(862, 41);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 18);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Подробное решение";
-            // 
             // menuButton
             // 
             this.menuButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuButton.BackgroundImage")));
@@ -1172,17 +1146,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Choe.Properties.Resources.Rjytw1;
             this.ClientSize = new System.Drawing.Size(1050, 612);
             this.Controls.Add(this.MenuPanel);
             this.Controls.Add(this.PanelPodpiski);
             this.Controls.Add(this.Ache);
             this.Controls.Add(this.PanelSDollarom);
             this.Controls.Add(this.Uebok);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.InputTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sidebarContainer);
@@ -1210,7 +1182,6 @@
         #endregion
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.TextBox InputTextBox;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
@@ -1262,7 +1233,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button43;
         private System.Windows.Forms.Button pidor;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Uebok;
         public System.Windows.Forms.Panel Ache;
         private System.Windows.Forms.Timer PlotiZaKnopki;

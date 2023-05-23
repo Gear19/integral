@@ -228,6 +228,7 @@
     <None Include="Resources\Dollars.png" />
     <None Include="Resources\Возврат.png" />
     <None Include="Resources\credit_card_PNG207.png" />
+    <None Include="Resources\Rjytw.jpg" />
     <Content Include="Resources\Интеграл.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
