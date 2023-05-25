@@ -113,7 +113,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API\Product.cs" />
     <Compile Include="Base\BinaryOperationType.cs" />
     <Compile Include="Base\CheckedData`1.cs" />
     <Compile Include="Base\CompareData`1.cs" />
@@ -250,9 +249,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="appsettings.json" />
     <None Include="packages.config" />
-    <None Include="Properties\launchSettings.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
