@@ -15,15 +15,16 @@ namespace Choe
         OutputForm outputForm;
         Translator translator;
         Registration registration;
-
+        String version = "1.0";
         public InputForm()
         {
             InitializeComponent();
             translator = new Translator();
+            Versia.Text = "Версия: "+version;
         }
         bool sidebarExpand = true;
         int poison = 562;
-        private void pidor_Click(object sender, EventArgs e)
+        private void vidvigatel_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
         }
@@ -76,7 +77,7 @@ namespace Choe
             Application.Exit();
         }
 
-        private void Uebok_Click(object sender, EventArgs e)
+        private void reshit_Click(object sender, EventArgs e)
         {
             string newIntegral = InputTextBox.Text;
             DATADATADATA.OutputTextDa = InputTextBox.Text;
@@ -92,7 +93,7 @@ namespace Choe
             }
 
             this.Hide();
-            outputForm = new OutputForm();
+            outputForm = new OutputForm("s");
             outputForm.Show();
         }
 
@@ -224,6 +225,47 @@ namespace Choe
             registration = new Registration();
             registration.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+
+
+            string newVersion = "1.1";
+            bool Obnoba = true;
+
+
+
+
+
+            if (Obnoba == true)
+            {
+                Versia.Text = "Версия: " + newVersion;
+                version = newVersion;
+                MessageBox.Show(
+                "Обновление завершено",
+                "Обновление",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button1,
+                MessageBoxOptions.DefaultDesktopOnly);
+            }
+            else
+            {
+                MessageBox.Show(
+                "У вас уже установлены\nвсе обновления",
+                "Обновление",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button1,
+                MessageBoxOptions.DefaultDesktopOnly);
+            }
+        }
+
+       
+
+
         //239487432234324
     }
 }

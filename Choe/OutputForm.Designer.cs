@@ -35,10 +35,10 @@
             this.button16 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.Cannibal = new System.Windows.Forms.Label();
+            this.da = new System.Windows.Forms.Label();
             this.Nigger = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Mudak = new System.Windows.Forms.Button();
+            this.Krug = new System.Windows.Forms.Button();
             this.otvet = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -115,20 +115,20 @@
             // 
             this.sidebarTimer.Interval = 1;
             // 
-            // Cannibal
+            // da
             // 
-            this.Cannibal.AutoEllipsis = true;
-            this.Cannibal.AutoSize = true;
-            this.Cannibal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cannibal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Cannibal.ForeColor = System.Drawing.Color.White;
-            this.Cannibal.Location = new System.Drawing.Point(106, 93);
-            this.Cannibal.Margin = new System.Windows.Forms.Padding(0);
-            this.Cannibal.MaximumSize = new System.Drawing.Size(900, 31);
-            this.Cannibal.Name = "Cannibal";
-            this.Cannibal.Size = new System.Drawing.Size(162, 31);
-            this.Cannibal.TabIndex = 43;
-            this.Cannibal.Text = "cos(x)/sin(x)";
+            this.da.AutoEllipsis = true;
+            this.da.AutoSize = true;
+            this.da.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.da.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.da.ForeColor = System.Drawing.Color.White;
+            this.da.Location = new System.Drawing.Point(106, 93);
+            this.da.Margin = new System.Windows.Forms.Padding(0);
+            this.da.MaximumSize = new System.Drawing.Size(900, 31);
+            this.da.Name = "da";
+            this.da.Size = new System.Drawing.Size(162, 31);
+            this.da.TabIndex = 43;
+            this.da.Text = "cos(x)/sin(x)";
             // 
             // Nigger
             // 
@@ -158,24 +158,24 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
-            // Mudak
+            // Krug
             // 
-            this.Mudak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Mudak.BackgroundImage = global::Choe.Properties.Resources.Возврат;
-            this.Mudak.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Mudak.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.Mudak.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Mudak.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Mudak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Mudak.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Mudak.ForeColor = System.Drawing.Color.White;
-            this.Mudak.Location = new System.Drawing.Point(1000, 562);
-            this.Mudak.Margin = new System.Windows.Forms.Padding(0);
-            this.Mudak.Name = "Mudak";
-            this.Mudak.Size = new System.Drawing.Size(50, 50);
-            this.Mudak.TabIndex = 13;
-            this.Mudak.UseVisualStyleBackColor = false;
-            this.Mudak.Click += new System.EventHandler(this.Mudak_Click);
+            this.Krug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Krug.BackgroundImage = global::Choe.Properties.Resources.Возврат;
+            this.Krug.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Krug.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.Krug.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Krug.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.Krug.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Krug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Krug.ForeColor = System.Drawing.Color.White;
+            this.Krug.Location = new System.Drawing.Point(1000, 562);
+            this.Krug.Margin = new System.Windows.Forms.Padding(0);
+            this.Krug.Name = "Krug";
+            this.Krug.Size = new System.Drawing.Size(50, 50);
+            this.Krug.TabIndex = 13;
+            this.Krug.UseVisualStyleBackColor = false;
+            this.Krug.Click += new System.EventHandler(this.Krug_Click);
             // 
             // otvet
             // 
@@ -218,9 +218,9 @@
             this.Controls.Add(this.otvet);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Nigger);
-            this.Controls.Add(this.Cannibal);
+            this.Controls.Add(this.da);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Mudak);
+            this.Controls.Add(this.Krug);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OutputForm";
             this.Text = "Form1";
@@ -241,8 +241,8 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer sidebarTimer;
-        private System.Windows.Forms.Button Mudak;
-        private System.Windows.Forms.Label Cannibal;
+        private System.Windows.Forms.Button Krug;
+        private System.Windows.Forms.Label da;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Nigger;
         private System.Windows.Forms.Label otvet;
