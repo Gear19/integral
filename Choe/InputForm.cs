@@ -18,11 +18,6 @@ namespace Choe
         Translator translator;
         Registration registration;
         List<Product> products;
-
-        public InputForm()
-        {
-            InitializeComponent();
-            translator = new Translator();    
         String version = "1.0";
         public InputForm()
         {
