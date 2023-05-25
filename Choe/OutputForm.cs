@@ -12,16 +12,20 @@ namespace Choe
 {
     public partial class OutputForm : Form
     {
-        public OutputForm()
+        string l;
+        public OutputForm(string a)
         {
             InitializeComponent();
+            l = a;
         }
+        
+
         InputForm inputForm;
         private void OutputForm_Load(object sender, EventArgs e)
         {
-            Cannibal.Text = DATADATADATA.OutputTextDa;
+            da.Text = DATADATADATA.OutputTextDa;
             otvet.Text = DATADATADATA.OutputTextNet;
-            Size size = TextRenderer.MeasureText(Cannibal.Text, Cannibal.Font);
+            Size size = TextRenderer.MeasureText(da.Text, da.Font);
             Nigger.Location = new Point(97 + size.Width, 93);
         }
         private void button16_Click(object sender, EventArgs e)
@@ -36,13 +40,11 @@ namespace Choe
             base.WndProc(ref m);
         }
 
-        private void Mudak_Click(object sender, EventArgs e)
+        private void Krug_Click(object sender, EventArgs e)
         {
             this.Hide();
             inputForm = new InputForm();
             inputForm.Show();
         }
-
-        
     }
 }

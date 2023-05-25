@@ -63,7 +63,7 @@
             this.button42 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pidor = new System.Windows.Forms.Button();
+            this.vidvigatel = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -83,7 +83,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
-            this.Uebok = new System.Windows.Forms.Button();
+            this.reshit = new System.Windows.Forms.Button();
             this.Ache = new System.Windows.Forms.Panel();
             this.PlotiZaKnopki = new System.Windows.Forms.Timer(this.components);
             this.ButtonDollar = new System.Windows.Forms.Button();
@@ -93,6 +93,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.NeDollar = new System.Windows.Forms.Button();
             this.MenuPanel = new System.Windows.Forms.Panel();
+            this.Versia = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.NazadButton = new System.Windows.Forms.Button();
             this.menuTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -628,7 +630,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.pidor);
+            this.panel5.Controls.Add(this.vidvigatel);
             this.panel5.Controls.Add(this.Ploti);
             this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.button22);
@@ -655,23 +657,23 @@
             this.panel5.Size = new System.Drawing.Size(1050, 50);
             this.panel5.TabIndex = 35;
             // 
-            // pidor
+            // vidvigatel
             // 
-            this.pidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.pidor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pidor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.pidor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.pidor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.pidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pidor.ForeColor = System.Drawing.Color.White;
-            this.pidor.Location = new System.Drawing.Point(1000, 0);
-            this.pidor.Margin = new System.Windows.Forms.Padding(0);
-            this.pidor.Name = "pidor";
-            this.pidor.Size = new System.Drawing.Size(50, 50);
-            this.pidor.TabIndex = 45;
-            this.pidor.UseVisualStyleBackColor = false;
-            this.pidor.Click += new System.EventHandler(this.pidor_Click);
+            this.vidvigatel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.vidvigatel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.vidvigatel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.vidvigatel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.vidvigatel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.vidvigatel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vidvigatel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vidvigatel.ForeColor = System.Drawing.Color.White;
+            this.vidvigatel.Location = new System.Drawing.Point(1000, 0);
+            this.vidvigatel.Margin = new System.Windows.Forms.Padding(0);
+            this.vidvigatel.Name = "vidvigatel";
+            this.vidvigatel.Size = new System.Drawing.Size(50, 50);
+            this.vidvigatel.TabIndex = 45;
+            this.vidvigatel.UseVisualStyleBackColor = false;
+            this.vidvigatel.Click += new System.EventHandler(this.vidvigatel_Click);
             // 
             // button22
             // 
@@ -996,24 +998,24 @@
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
-            // Uebok
+            // reshit
             // 
-            this.Uebok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Uebok.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Uebok.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.Uebok.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Uebok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
-            this.Uebok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Uebok.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Uebok.ForeColor = System.Drawing.Color.White;
-            this.Uebok.Location = new System.Drawing.Point(475, 301);
-            this.Uebok.Margin = new System.Windows.Forms.Padding(0);
-            this.Uebok.Name = "Uebok";
-            this.Uebok.Size = new System.Drawing.Size(100, 25);
-            this.Uebok.TabIndex = 46;
-            this.Uebok.Text = "Решить";
-            this.Uebok.UseVisualStyleBackColor = false;
-            this.Uebok.Click += new System.EventHandler(this.Uebok_Click);
+            this.reshit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.reshit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reshit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.reshit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.reshit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.reshit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reshit.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reshit.ForeColor = System.Drawing.Color.White;
+            this.reshit.Location = new System.Drawing.Point(475, 301);
+            this.reshit.Margin = new System.Windows.Forms.Padding(0);
+            this.reshit.Name = "reshit";
+            this.reshit.Size = new System.Drawing.Size(100, 25);
+            this.reshit.TabIndex = 46;
+            this.reshit.Text = "Решить";
+            this.reshit.UseVisualStyleBackColor = false;
+            this.reshit.Click += new System.EventHandler(this.reshit_Click);
             // 
             // Ache
             // 
@@ -1112,12 +1114,44 @@
             // 
             // MenuPanel
             // 
+            this.MenuPanel.Controls.Add(this.Versia);
+            this.MenuPanel.Controls.Add(this.button1);
             this.MenuPanel.Controls.Add(this.NazadButton);
             this.MenuPanel.Location = new System.Drawing.Point(-200, 27);
             this.MenuPanel.Margin = new System.Windows.Forms.Padding(0);
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(200, 585);
             this.MenuPanel.TabIndex = 50;
+            // 
+            // Versia
+            // 
+            this.Versia.AutoSize = true;
+            this.Versia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Versia.ForeColor = System.Drawing.Color.White;
+            this.Versia.Location = new System.Drawing.Point(0, 538);
+            this.Versia.Name = "Versia";
+            this.Versia.Size = new System.Drawing.Size(72, 15);
+            this.Versia.TabIndex = 51;
+            this.Versia.Text = "Версия: 1.0";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 555);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 30);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "Проверить обновления ↓";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NazadButton
             // 
@@ -1152,7 +1186,7 @@
             this.Controls.Add(this.PanelPodpiski);
             this.Controls.Add(this.Ache);
             this.Controls.Add(this.PanelSDollarom);
-            this.Controls.Add(this.Uebok);
+            this.Controls.Add(this.reshit);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.InputTextBox);
@@ -1174,6 +1208,7 @@
             this.PanelPodpiski.ResumeLayout(false);
             this.PanelPodpiski.PerformLayout();
             this.MenuPanel.ResumeLayout(false);
+            this.MenuPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1232,8 +1267,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.Button pidor;
-        private System.Windows.Forms.Button Uebok;
+        private System.Windows.Forms.Button vidvigatel;
+        private System.Windows.Forms.Button reshit;
         public System.Windows.Forms.Panel Ache;
         private System.Windows.Forms.Timer PlotiZaKnopki;
         private System.Windows.Forms.Button ButtonDollar;
@@ -1245,6 +1280,8 @@
         private System.Windows.Forms.Panel MenuPanel;
         private System.Windows.Forms.Timer menuTimer;
         private System.Windows.Forms.Button NazadButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label Versia;
     }
 }
 
