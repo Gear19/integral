@@ -18,12 +18,12 @@ namespace Choe
         Translator translator;
         Registration registration;
         List<Product> products;
-        String version = "1.0";
+
         public InputForm()
         {
             InitializeComponent();
             translator = new Translator();
-            Versia.Text = "Версия: "+version;
+            Versia.Text = "Версия: "+DATADATADATA.version;
         }
         bool sidebarExpand = true;
         int poison = 562;
@@ -231,21 +231,15 @@ namespace Choe
 
         private void button1_Click(object sender, EventArgs e)
         {
+            RefreshVersion();
 
-
-
-
-            string newVersion = "1.1";
-            bool Obnoba = true;
-
-
-
-
+            string newVersion = products[products.Count-1].Version;
+            bool Obnoba = DATADATADATA.version != newVersion;
 
             if (Obnoba == true)
             {
                 Versia.Text = "Версия: " + newVersion;
-                version = newVersion;
+                DATADATADATA.version = newVersion;
                 MessageBox.Show(
                 "Обновление завершено",
                 "Обновление",
@@ -280,10 +274,7 @@ namespace Choe
         {
             NpgsqlConnection conn = new NpgsqlConnection("Server=194.169.163.175;Port=5432;Database=okdatabase;User Id=vilya;Password=danger");
             conn.Open();
-            NpgsqlCommand comm = new NpgsqlCommand();
-            comm.Connection = conn;
-            comm.CommandType = CommandType.Text;
-            comm.CommandText = "select * from Versions";
+            NpgsqlCommand comm = new NpgsqlCommand("select * from versions", conn);
             NpgsqlDataReader reader = comm.ExecuteReader();
             if (reader.HasRows)
             {

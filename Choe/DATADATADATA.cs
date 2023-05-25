@@ -10,6 +10,6 @@ namespace Choe
     {
         public static string OutputTextDa;
         public static string OutputTextNet;
-
+        public static string version = "1.0";
     }
 }
