@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Choe.API;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Choe
 {
@@ -15,11 +18,12 @@ namespace Choe
         OutputForm outputForm;
         Translator translator;
         Registration registration;
+        List<Product> products;
 
         public InputForm()
         {
             InitializeComponent();
-            translator = new Translator();
+            translator = new Translator();    
         }
         bool sidebarExpand = true;
         int poison = 562;
@@ -225,5 +229,38 @@ namespace Choe
             registration.Show();
         }
         //239487432234324
+
+        struct Product
+        {
+            public string Id;
+            public string Version;
+        }
+        private void RefreshVersion()
+        {
+            NpgsqlConnection conn = new NpgsqlConnection("Server=194.169.163.175;Port=5432;Database=okdatabase;User Id=vilya;Password=danger");
+            conn.Open();
+            NpgsqlCommand comm = new NpgsqlCommand();
+            comm.Connection = conn;
+            comm.CommandType = CommandType.Text;
+            comm.CommandText = "select * from Versions";
+            NpgsqlDataReader reader = comm.ExecuteReader();
+            if (reader.HasRows)
+            {
+                products = new List<Product>();
+                DataTable dt = new DataTable();
+                dt.Load(reader);
+                foreach (DataRow row in dt.Rows)
+                {
+                    Product newP = new Product();
+                    string Id = row["Id"].ToString();
+                    string Version = row["Version"].ToString();
+                    newP.Id = Id;
+                    newP.Version = Version;
+                    products.Add(newP);
+                }
+            }
+            comm.Dispose();
+            conn.Close();
+        }
     }
 }
